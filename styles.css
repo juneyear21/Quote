@@ -1,0 +1,33 @@
+body{
+    background-color: #8097ff;
+    font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  margin-top: 15%;
+}
+
+.contain{
+background-color: rgb(255, 255, 255);
+border-radius: 17px;
+padding: 25px;
+width: 50%;
+display: flex;
+flex-flow: column nowrap;
+border: solid #8097ff60 3px ;
+
+}
+
+.contain > .author{
+    margin-left: auto;
+}
+.contain .quote{
+    text-align: center;
+}
+.contain > .generate {
+    border-radius: 50px;
+    padding: 20px;
+    width: 50%;
+    margin: 0 auto; /* Center the button horizontally */
+}
