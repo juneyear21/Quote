@@ -1,42 +1,56 @@
-body{
+body {
     background-color: #8097ff;
     font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  display: flex;
-  justify-content: center;
-  margin-top: 15%;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Take full viewport height */
 }
 
-.contain{
-background-color: rgb(255, 255, 255);
-border-radius: 17px;
-padding: 25px;
-width: 50%;
-display: flex;
-flex-flow: column nowrap;
-border: solid #8097ff60 3px ;
-
+.contain {
+    background-color: rgb(255, 255, 255);
+    border-radius: 17px;
+    padding: 25px;
+    width: 80%; /* Adjust width for mobile view */
+    max-width: 400px; /* Limit width on larger screens */
+    display: flex;
+    flex-flow: column nowrap;
+    border: solid #8097ff60 3px;
 }
 
-.contain > .author{
+.contain > .author {
     margin-left: auto;
     color: #8097ff;
     font-style: oblique;
 }
-.contain .quote{
+
+.quote {
     text-align: center;
     color: #3050df;
 }
+
 .contain > .generate {
     border-radius: 50px;
     padding: 20px;
-    width: 50%;
-    margin: 0 auto;
+    width: 100%; /* Take full width */
+    margin-top: 20px; /* Add space between button and quote */
     overflow: hidden;
     background-color: #8097ff;
-    color:#ffffff;
+    color: #ffffff;
     font-weight: 500;
     font-size: 17px;
     border: none;
 }
+
+/* Media query for mobile view */
+@media screen and (max-width: 768px) {
+    .contain {
+        width: 80%;
+        max-width: 400px;
+    }
+    .quote {
+        font-size: 20px;
+    }
+  }
