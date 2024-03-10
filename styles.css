@@ -5,16 +5,25 @@ body {
     font-style: normal;
     display: flex;
     justify-content: center;
-    align-items: center; /* Center vertically */
-    height: 100vh; /* Take full viewport height */
+    align-items: center; 
+    height: 90vh; 
+}
+
+.container{
+    width: 80%; 
+    max-width: 400px; 
+    flex-flow: column nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
 
 .contain {
     background-color: rgb(255, 255, 255);
     border-radius: 17px;
     padding: 25px;
-    width: 80%; /* Adjust width for mobile view */
-    max-width: 400px; /* Limit width on larger screens */
+    width: 80%;
+    max-width: 400px;
     display: flex;
     flex-flow: column nowrap;
     border: solid #8097ff60 3px;
@@ -27,24 +36,47 @@ body {
 }
 
 .quote {
-    text-align: center;
+    width:auto;
+    text-align:center;
     color: #3050df;
+    font-size: 30px;
 }
 
 .contain > .generate {
     border-radius: 50px;
     padding: 20px;
-    width: 100%; /* Take full width */
-    margin-top: 20px; /* Add space between button and quote */
+    width: 100%;
+    margin-top: 20px;
     overflow: hidden;
     background-color: #8097ff;
     color: #ffffff;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 17px;
     border: none;
+    cursor: pointer;
 }
 
-/* Media query for mobile view */
+p{
+    color: white;
+}
+img{
+    width: 25px;
+    background-color: white;
+    border-radius: 70px;
+    border: 2px solid white;
+}
+
+p,
+img{
+margin: 10px;
+}
+
+.bottom{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
 @media screen and (max-width: 768px) {
     .contain {
         width: 80%;
